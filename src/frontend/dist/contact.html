@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – NKB Biopharma</title>
+  <meta name="description" content="Get in touch with NKB Biopharma for inquiries about products, partnerships, careers, and media relations." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <a href="index.html"><img src="images/logo.png" alt="NKB Biopharma Logo" /></a>
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="markets.html">Markets</a></li>
+      <li><a href="commitment.html">Our Commitment</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-banner">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+  <h1>Contact Us</h1>
+  <p>We would love to hear from you — reach out for any inquiries or partnership opportunities</p>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="contact-wrap">
+
+      <!-- Contact Details -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <p><strong>Registered Office</strong>NKB Biopharma Ltd.<br/>123 Pharma Park, Science City<br/>Hyderabad – 500 081<br/>Telangana, India</p>
+        </div>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <p><strong>Phone</strong>+91 40 1234 5678<br/>+91 40 8765 4321</p>
+        </div>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <p><strong>Email</strong>info@nkbbiopharma.com<br/>bd@nkbbiopharma.com (Business Dev)</p>
+        </div>
+
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+          <p><strong>Business Hours</strong>Monday – Friday: 9:00 AM – 6:00 PM IST<br/>Saturday: 9:00 AM – 1:00 PM IST</p>
+        </div>
+
+        <div style="background:var(--light); border-radius:8px; padding:20px; margin-top:10px;">
+          <h3 style="font-size:1rem; color:var(--navy); margin-bottom:10px;">Department Contacts</h3>
+          <p style="font-size:0.9rem; color:#555; margin-bottom:6px;"><strong style="color:var(--navy);">Medical Affairs:</strong> medical@nkbbiopharma.com</p>
+          <p style="font-size:0.9rem; color:#555; margin-bottom:6px;"><strong style="color:var(--navy);">Regulatory:</strong> regulatory@nkbbiopharma.com</p>
+          <p style="font-size:0.9rem; color:#555; margin-bottom:6px;"><strong style="color:var(--navy);">Careers:</strong> careers@nkbbiopharma.com</p>
+          <p style="font-size:0.9rem; color:#555;"><strong style="color:var(--navy);">Media:</strong> media@nkbbiopharma.com</p>
+        </div>
+      </div>
+
+      <!-- FormSpree Contact Form -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <!-- Replace YOUR_FORM_ID below with your actual FormSpree form ID -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Enter first name" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Enter last name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+            </div>
+            <div class="form-group">
+              <label for="organization">Organization</label>
+              <input type="text" id="organization" name="organization" placeholder="Company / Hospital" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inquiry">Inquiry Type *</label>
+            <select id="inquiry" name="inquiry" required>
+              <option value="" disabled selected>Select inquiry type</option>
+              <option value="Product Information">Product Information</option>
+              <option value="Business Development / Partnership">Business Development / Partnership</option>
+              <option value="Regulatory / Compliance">Regulatory / Compliance</option>
+              <option value="Medical Affairs">Medical Affairs</option>
+              <option value="Career Opportunities">Career Opportunities</option>
+              <option value="Media / Press">Media / Press</option>
+              <option value="General Inquiry">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Please describe your inquiry in detail..."></textarea>
+          </div>
+          <!-- Honeypot spam prevention -->
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_subject" value="New Inquiry from NKB Biopharma Website" />
+          <button type="submit" class="btn" style="width:100%;">Send Message</button>
+          <p style="font-size:0.82rem; color:#888; margin-top:12px; text-align:center;">* Required fields. Your information is kept confidential.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="NKB Biopharma" />
+      <p>Advancing life sciences through innovation, integrity, and a patient-first approach.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="markets.html">Markets</a></li>
+        <li><a href="commitment.html">Our Commitment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="products.html">NKB-ONCO 101</a></li>
+        <li><a href="products.html">NKB-CARDIO 202</a></li>
+        <li><a href="products.html">NKB-IMMUNO 303</a></li>
+        <li><a href="products.html">NKB-RARE 404</a></li>
+        <li><a href="products.html">NKB-BIO 505</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>NKB Biopharma Ltd.<br/>123 Pharma Park, Science City<br/>Hyderabad – 500 081, India</p>
+      <p style="margin-top:10px;">info@nkbbiopharma.com<br/>+91 40 1234 5678</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 NKB Biopharma Ltd. All rights reserved.</div>
+</footer>
+
+<script>function toggleMenu(){document.getElementById('main-nav').classList.toggle('open');}</script>
+</body>
+</html>

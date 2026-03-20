@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NKB Biopharma – Advancing Life Sciences</title>
+  <meta name="description" content="NKB Biopharma is a leading biopharmaceutical company dedicated to developing innovative therapies that improve patient outcomes worldwide." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo-wrap">
+    <a href="index.html"><img src="images/logo.png" alt="NKB Biopharma Logo" /></a>
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="markets.html">Markets</a></li>
+      <li><a href="commitment.html">Our Commitment</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO SLIDER -->
+<div class="hero-slider" id="heroSlider">
+  <div class="hero-slides" id="heroSlides">
+
+    <!-- Slide 1: Lab Research -->
+    <div class="hero-slide">
+      <img src="images/slider-lab.jpg" alt="Research Laboratory" />
+      <div class="hero-slide-overlay">
+        <div class="hero-slide-text">
+          <h1>Innovating for a <span>Healthier Tomorrow</span></h1>
+          <p>NKB Biopharma develops cutting-edge biopharmaceutical solutions that address unmet medical needs and transform patient care globally.</p>
+          <div class="hero-btns">
+            <a href="products.html" class="btn">Explore Our Products</a>
+            <a href="about.html" class="btn btn-outline">About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Patient Care -->
+    <div class="hero-slide">
+      <img src="images/slider-patient.jpg" alt="Patient Care" />
+      <div class="hero-slide-overlay">
+        <div class="hero-slide-text">
+          <h1>Putting <span>Patients First</span> in Every Decision</h1>
+          <p>Our compassionate approach ensures every therapy we develop brings real, measurable improvement to patients and their families worldwide.</p>
+          <div class="hero-btns">
+            <a href="commitment.html" class="btn">Our Commitment</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Global Reach -->
+    <div class="hero-slide">
+      <img src="images/slider-global.jpg" alt="Global Reach" />
+      <div class="hero-slide-overlay">
+        <div class="hero-slide-text">
+          <h1>Reaching <span>Patients Globally</span> Across 30+ Countries</h1>
+          <p>With a strong global presence, NKB Biopharma delivers life-changing therapies to patients in over 30 countries across all major markets.</p>
+          <div class="hero-btns">
+            <a href="markets.html" class="btn">Our Markets</a>
+            <a href="contact.html" class="btn btn-outline">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="slider-prev" onclick="slideMove(-1)">&#8249;</button>
+  <button class="slider-next" onclick="slideMove(1)">&#8250;</button>
+  <div class="slider-dots" id="sliderDots"></div>
+</div>
+
+<!-- ABOUT SNIPPET -->
+<section>
+  <div class="section-inner">
+    <div class="two-col">
+      <div class="text-side">
+        <h2 class="section-title">Who We Are</h2>
+        <div class="divider"></div>
+        <p>Founded with a vision to bridge the gap between scientific discovery and patient care, NKB Biopharma is a research-driven biopharmaceutical company committed to developing safe, effective, and accessible therapies.</p>
+        <p>Our multidisciplinary team of scientists, clinicians, and industry experts work collaboratively to bring breakthrough treatments from the laboratory to the patient bedside.</p>
+        <a href="about.html" class="btn" style="margin-top:10px">Read Our Story</a>
+      </div>
+      <div class="img-side" style="background: linear-gradient(135deg,#2C3270,#4A9FD4); border-radius:8px; min-height:280px; display:flex; align-items:center; justify-content:center;">
+        <img src="images/logo.png" alt="NKB Biopharma" style="max-width:220px; padding:30px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item"><h3>5+</h3><p>Innovative Products</p></div>
+    <div class="stat-item"><h3>15+</h3><p>Years of Research</p></div>
+    <div class="stat-item"><h3>30+</h3><p>Countries Served</p></div>
+    <div class="stat-item"><h3>200+</h3><p>Clinical Experts</p></div>
+  </div>
+</div>
+
+<!-- PRODUCTS HIGHLIGHT -->
+<section class="alt-bg">
+  <div class="section-inner">
+    <h2 class="section-title">Our <span>Product Portfolio</span></h2>
+    <div class="divider"></div>
+    <p style="margin-bottom:32px; color:#555;">We develop a focused range of biopharmaceutical therapies targeting critical therapeutic areas with high unmet medical need.</p>
+
+    <div class="prod-carousel-wrap">
+      <button class="prod-prev" onclick="prodMove(-1)">&#8249;</button>
+      <div class="prod-viewport">
+        <div class="prod-track" id="prodTrack">
+
+          <div class="prod-slide">
+            <div class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg></div>
+              <h3>NKB-ONCO 101</h3>
+              <p>A targeted oncology therapeutic agent for treatment-resistant solid tumors with a novel mechanism of action.</p>
+              <span class="tag">Oncology</span>
+            </div>
+          </div>
+
+          <div class="prod-slide">
+            <div class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402C1 3.384 3.397 1 6.5 1c1.966 0 3.83 1.09 5.5 2.977C13.67 2.09 15.533 1 17.5 1 20.603 1 23 3.384 23 7.191c0 4.105-5.37 8.863-11 14.402z"/></svg></div>
+              <h3>NKB-CARDIO 202</h3>
+              <p>A next-generation cardiovascular biologic that reduces major adverse cardiac events in high-risk patients.</p>
+              <span class="tag">Cardiovascular</span>
+            </div>
+          </div>
+
+          <div class="prod-slide">
+            <div class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 19.83A1 1 0 0 0 5.18 21C9 17 11 15 20 15c0-4.42-1.25-7.6-3-7z"/></svg></div>
+              <h3>NKB-IMMUNO 303</h3>
+              <p>An advanced immunotherapy platform harnessing the body's immune system to combat autoimmune disorders.</p>
+              <span class="tag">Immunology</span>
+            </div>
+          </div>
+
+          <div class="prod-slide">
+            <div class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 0 0 10A5 5 0 0 0 12 2zm0 12c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/></svg></div>
+              <h3>NKB-RARE 404</h3>
+              <p>A groundbreaking gene-therapy approach addressing rare genetic disorders with limited treatment options.</p>
+              <span class="tag">Rare Diseases</span>
+            </div>
+          </div>
+
+          <div class="prod-slide">
+            <div class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div>
+              <h3>NKB-BIO 505</h3>
+              <p>A premium biologics platform delivering high-purity monoclonal antibodies for complex inflammatory conditions.</p>
+              <span class="tag">Biologics</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="prod-next" onclick="prodMove(1)">&#8250;</button>
+    </div>
+
+    <div class="prod-dots" id="prodDots"></div>
+
+    <div style="text-align:center; margin-top:36px;">
+      <a href="products.html" class="btn">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMMITMENT HIGHLIGHT -->
+<section>
+  <div class="section-inner">
+    <h2 class="section-title" style="text-align:center;">Our <span>Commitment</span></h2>
+    <div class="divider" style="margin:0 auto 28px;"></div>
+    <div class="card-grid">
+      <div class="card" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 16px;"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg></div>
+        <h3>Quality Excellence</h3>
+        <p>Rigorous GMP-compliant manufacturing ensuring the highest standards of pharmaceutical quality and safety.</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 16px;"><svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></div>
+        <h3>R&amp;D Innovation</h3>
+        <p>Continuous investment in research and development to discover novel therapeutic targets and treatment modalities.</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 16px;"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 19.83A1 1 0 0 0 5.18 21C9 17 11 15 20 15c0-4.42-1.25-7.6-3-7z"/></svg></div>
+        <h3>Sustainability</h3>
+        <p>Environmental responsibility embedded in our operations, from green chemistry to sustainable packaging initiatives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--navy); text-align:center; padding:60px 40px;">
+  <h2 style="color:var(--white); font-size:1.8rem; margin-bottom:14px;">Ready to Partner with <span style="color:var(--gold);">NKB Biopharma?</span></h2>
+  <p style="color:rgba(255,255,255,0.8); max-width:540px; margin:0 auto 28px;">Contact our team to learn how we can collaborate in bringing life-changing therapies to patients who need them most.</p>
+  <a href="contact.html" class="btn">Get in Touch</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="NKB Biopharma" />
+      <p>Advancing life sciences through innovation, integrity, and a patient-first approach.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="markets.html">Markets</a></li>
+        <li><a href="commitment.html">Our Commitment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="products.html">NKB-ONCO 101</a></li>
+        <li><a href="products.html">NKB-CARDIO 202</a></li>
+        <li><a href="products.html">NKB-IMMUNO 303</a></li>
+        <li><a href="products.html">NKB-RARE 404</a></li>
+        <li><a href="products.html">NKB-BIO 505</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>NKB Biopharma Ltd.<br/>123 Pharma Park, Science City<br/>Hyderabad – 500 081, India</p>
+      <p style="margin-top:10px;">info@nkbbiopharma.com<br/>+91 40 1234 5678</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 NKB Biopharma Ltd. All rights reserved.
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+function toggleMenu() {
+  document.getElementById('main-nav').classList.toggle('open');
+}
+
+// Hero Slider
+var currentSlide = 0;
+var slides = document.querySelectorAll('.hero-slide');
+var totalSlides = slides.length;
+var autoPlayInterval;
+
+var dotsContainer = document.getElementById('sliderDots');
+for (var i = 0; i < totalSlides; i++) {
+  var dot = document.createElement('button');
+  dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+  dot.setAttribute('data-index', i);
+  dot.onclick = (function(idx) { return function() { goToSlide(idx); }; })(i);
+  dotsContainer.appendChild(dot);
+}
+
+function goToSlide(n) {
+  currentSlide = (n + totalSlides) % totalSlides;
+  document.getElementById('heroSlides').style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+  document.querySelectorAll('.slider-dot').forEach(function(d, i) {
+    d.classList.toggle('active', i === currentSlide);
+  });
+}
+
+function slideMove(dir) {
+  goToSlide(currentSlide + dir);
+  resetAutoPlay();
+}
+
+function resetAutoPlay() {
+  clearInterval(autoPlayInterval);
+  autoPlayInterval = setInterval(function() { goToSlide(currentSlide + 1); }, 5000);
+}
+
+resetAutoPlay();
+
+// Product Portfolio Carousel (responsive: 3 cards desktop, 2 tablet, 1 mobile)
+var prodCurrent = 0;
+var prodSlides = document.querySelectorAll('.prod-slide');
+var prodTotal = prodSlides.length;
+
+function getProdCardsPerView() {
+  if (window.innerWidth <= 560) return 1;
+  if (window.innerWidth <= 900) return 2;
+  return 3;
+}
+
+function buildProdDots() {
+  var cardsPerView = getProdCardsPerView();
+  var maxIndex = prodTotal - cardsPerView;
+  var dotsCount = maxIndex + 1;
+  var prodDotsContainer = document.getElementById('prodDots');
+  prodDotsContainer.innerHTML = '';
+  for (var j = 0; j < dotsCount; j++) {
+    var pdot = document.createElement('button');
+    pdot.className = 'prod-dot' + (j === 0 ? ' active' : '');
+    pdot.setAttribute('data-index', j);
+    pdot.onclick = (function(idx) { return function() { goToProd(idx); }; })(j);
+    prodDotsContainer.appendChild(pdot);
+  }
+}
+
+function goToProd(n) {
+  var cardsPerView = getProdCardsPerView();
+  var maxIndex = prodTotal - cardsPerView;
+  prodCurrent = Math.max(0, Math.min(n, maxIndex));
+  var slideWidth = 100 / cardsPerView;
+  document.getElementById('prodTrack').style.transform = 'translateX(-' + (prodCurrent * slideWidth) + '%)';
+  document.querySelectorAll('.prod-dot').forEach(function(d, i) {
+    d.classList.toggle('active', i === prodCurrent);
+  });
+}
+
+function prodMove(dir) {
+  goToProd(prodCurrent + dir);
+}
+
+buildProdDots();
+goToProd(0);
+
+window.addEventListener('resize', function() {
+  prodCurrent = 0;
+  buildProdDots();
+  goToProd(0);
+});
+</script>
+</body>
+</html>
